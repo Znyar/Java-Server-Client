@@ -11,7 +11,7 @@ public class Server {
 
     private final int port;
     private boolean isRunning;
-    private final Logger log = DefaultLogger.getInstance();
+    private final Logger log = DefaultLogger.getLogger("server.log");
 
     public void start() {
 

@@ -14,7 +14,7 @@ public class Client {
     private final int serverPort;
     private final String host;
     private final long clientId;
-    private final Logger log = DefaultLogger.getInstance();
+    private final Logger log;
 
     public void start() {
         isRunning = true;
@@ -56,6 +56,7 @@ public class Client {
         this.serverPort = builder.serverPort;
         this.host = builder.host;
         this.clientId  = builder.clientId;
+        log = DefaultLogger.getLogger("client" + clientId + ".log");
     }
 
     public static class ClientBuilder {

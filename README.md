@@ -1,0 +1,1 @@
+Type in client console to send a message
